@@ -2,49 +2,54 @@ from flask import Flask, request
 from datetime import datetime
 import datetime as dt
 
+
 app = Flask(__name__)
 
 
-def action_do_booking(req):
-    parameters = req.get('queryResult').get('parameters')
+def action_do_booking(df_data):
+    date_format = "%d %b %Y"
+    null_var = "#NULL#"
+    action = "do_booking"
 
-    duration = parameters.get('duration', {})
+    fulfillment_text = df_data.get("queryResult").get("fulfillmentText")
+    parameters = df_data.get("queryResult").get("parameters")
+    duration = parameters.get("duration", {})
+
     if isinstance(duration, dict):
-        duration = duration.get('amount', "no duration")
+        duration_day = int(duration.get("amount", 0))
 
-    
-    sd = parameters.get('startDate', "no startdate")
-    edt = "null"
-    if sd:
-        sdt = datetime.strptime(sd, "%d %b %Y")
-        td = dt.timedelta(days=2)
-        edt = (sdt + td).strftime("%d %b %Y")
-        print(sdt)
-        print(edt)
+    start_date = parameters.get("startDate", null_var)
+    end_date = null_var
+
+    if start_date and start_date != null_var and duration:
+        start_date_obj = datetime.strptime(start_date, date_format)
+        td = dt.timedelta(days=duration_day)
+
+        end_date = (start_date_obj + td).strftime(date_format)
+
     return {
-        'fulfillmentText': f"action: {action}\nEnd: {edt} \n {df_fft}",
-        'source': 'webhookdata'
-        }
-    
+        "fulfillmentText": f"action: {action}\nEnd: {end_date} \n {fulfillment_text}",
+        "source": "webhookdata",
+    }
 
-@app.route('/webhook', methods=['POST', 'GET'])
+
+@app.route("/webhook", methods=["POST", "GET"])
 def webhook():
-    if request.method == 'GET':
+    default_response = {
+        "fulfillmentText": f"action not defined",
+        "source": "webhookdata",
+    }
+    if request.method == "GET":
         return "working"
-    
-    req = request.get_json(force=True)
-    print(req)
 
-    df_fft = req.get('queryResult').get('fulfillmentText')
-    print(df_fft)
-    action = req.get('queryResult').get('action')
+    df_data = request.get_json(force=True)
+    action = df_data.get("queryResult").get("action")
+
     if action == "do_booking":
-        return action_do_booking(req)
+        return action_do_booking(df_data)
     else:
-        return {
-            'fulfillmentText': f"action not defined"
-        }
-    
+        return default_response
+
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host="0.0.0.0", port=8080)
