@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "bookhotel-fpen",
+    "private_key_id": "b474a059751ae5c4a63cd920e200862e273c7360",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCwsFhmsil1VAJj\npOpx3kxk9zmBFH8IIDM9HtH1p6ugg82oibh4P5T5SakECY8bsiG2XOkUt58MhDmY\nOG29Z1q159as491JJexFH2iIxbb2ZfIrnE91KgajezDGDyHi5e7MSmyBXkjMgv3E\nWrgdQFOduZWBGO7guT+PVJ5fXGui7ElvdiiDLF3pXXb7rLTrcnA8iQotolGwbe1Q\nQ2LoF9Dhij591k40H9LljIR3xS9tWJBobVMo4q0MI049FKhqkn4KnltfcijL9nUD\nsMKO1AcgZ1oxs269Nw6DP9j08yA2geetdOTZ1Jekyn+V59vueWii5dqd+I2jGsgE\n9NV1NW4lAgMBAAECggEAPjvGz1lGgAR4mPdP+o6FkvR/RSdefRK2aXtPEbsemPmD\nuS7VEkm2471dskXZqbQq6qw8DqeEdmimTqblhFaAnVzNAPV7jlW0rD4dWDtnr88F\npvW2CPsl/nQYIFLZKS262CsIn+KBOsOStZQMkIUFTqM89Q0+qlmleQshg04uvWHs\nmzHUlgF1A3meaHuAmSQTqHZcVcr9o49O6tBkoCeTKFO+tT709l5gBa27gVBD//Jz\nL99x68M9n7n/vwKIQ7lrmy2LbQinbEMikDTmdG/ou2+dNQqeGfp109GxIORzHREx\nnPC6UwJYyYMY0ulxqNVU7mwi97Kabf7fbS3XmcuKewKBgQDwy+3Y08/vf0aUMtAF\nOETic1ApDGtjrcyTzIbmD2D7jcZnu1XAQdufi1hSHGEt73EcQK4McO9/83EZxbih\nUzNOVEvkzoMlWhuMGeq9ATqcxbnNbuIGORlIZutzzpUSVHHK1Y9iFM9/do5oyOFb\nBSHayznKUstcbcIWIKOV2U1JEwKBgQC72Dj660lM8IGhTTO7cVyDCgnakXXLjXO8\nbS5UN5gMkBonQJnkqY+gRh3kb9rEWtlAU8pTCCnQKq7ZuIcdkuL2MSINqzusvLaQ\nT1wi8DbwObP4LypWufPuzCLsJOFlI+37DNN97RY4TgrpWQOAvIyEjqMU8qSVAfwJ\nkIzh/WNK5wKBgQCTGrJKRVQBpwqSHNyyY6bJhNLS0PCGK7YQEOHUiE6iPwGXe32u\nf01RkYo6V3YS3vWF4gmyNghKbYmJyh26CJ8OWjcnJ/Y8imjL1UVvg+Gvxqd01imk\nzZshfSaYT/sIAKin1oHK1JXS87WaVCZAOclt5bt/W8c6xx7L79KgB+nMGwKBgQCP\nrn8/JtPFnz14dQX5/WcG8JnC7nqMvWDmoxjJ4FBUY7EtjxNnvW8X6CobPpe2k8sT\nkkPzKQ5apRtje+sV6vHh4IksrWqS4TI/xgQy0U0kiO6pCuK2vbvhT5Hy0O77HvV8\njz4CV2Qko0VjYev0/8P37Oa/Mi5Dr+XqJwAsKFZXxwKBgQC95HtPeD55pw4hgrEt\nwGcntF+fC99gRUE1H91LDt631NEPLRO/oLyHM/vsRcy4YxfJdW/uuTA0Ikz8IaVk\nYy+8VHOvlvR3JfmqCbOKMuUXVeKkb59tZUO8SBTeG48wc8Q0OGnWEjLZFsEG6Ek4\nHD1/VLoL2GnPK8vlHgepdfTu6g==\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-21z5w@bookhotel-fpen.iam.gserviceaccount.com",
+    "client_id": "113447229146963856716",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-21z5w%40bookhotel-fpen.iam.gserviceaccount.com"
+  }
